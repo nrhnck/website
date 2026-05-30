@@ -7,6 +7,8 @@
     --border: #2a2a2a;
 }
 
+/* RESET */
+
 * {
     box-sizing: border-box;
 }
@@ -20,7 +22,6 @@ body {
     background: var(--bg);
     color: var(--text);
 
-    /* upgraded typography */
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     line-height: 1.75;
 
@@ -28,7 +29,7 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* Layout */
+/* LAYOUT */
 
 .layout {
     display: grid;
@@ -36,7 +37,7 @@ body {
     min-height: 100vh;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 
 .sidebar {
     position: sticky;
@@ -59,9 +60,11 @@ body {
 .tagline {
     color: var(--muted);
     margin-bottom: 40px;
-    line-height: 1.6;
     font-size: 0.95rem;
+    line-height: 1.6;
 }
+
+/* NAV */
 
 .sidebar nav {
     display: flex;
@@ -87,14 +90,45 @@ body {
     color: var(--accent) !important;
 }
 
-/* Main Content */
+/* CONTENT AREA */
 
 .content {
     max-width: 850px;
     padding: 48px;
 }
 
-/* Headings */
+/* PAGE CARD SYSTEM (KEY IMPROVEMENT) */
+
+.page {
+    background: var(--surface);
+    padding: 28px;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* PAGE HEADER */
+
+.page-header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CONTENT SPACING SYSTEM */
+
+.page-content p {
+    margin: 0 0 1.25rem 0;
+}
+
+/* LEGACY HEADINGS (for homepage compatibility) */
 
 .content h1 {
     margin-top: 0;
@@ -104,52 +138,25 @@ body {
 }
 
 .content h2 {
-    font-weight: 500;
     font-size: 1.4rem;
+    font-weight: 500;
     margin-top: 2rem;
     letter-spacing: -0.01em;
 }
 
-/* Paragraph rhythm (big improvement) */
-
-p {
-    margin: 0 0 1.25rem 0;
-}
-
-/* Images */
+/* HERO IMAGE */
 
 .hero {
     width: 100%;
     max-width: 750px;
-    height: auto;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
     display: block;
-
     margin-bottom: 40px;
 }
 
-/* Articles (adds subtle “card” feel) */
-
-article {
-    max-width: 700px;
-
-    background: var(--surface);
-    padding: 24px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-}
-
-/* Date */
-
-.date {
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-}
-
-/* Blog Index */
+/* POST LIST */
 
 .post-list {
     list-style: none;
@@ -159,19 +166,21 @@ article {
 
 .post-list li {
     margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
 }
 
 .post-list span {
     color: var(--muted);
-    margin-right: 1rem;
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    min-width: 110px;
 }
 
 .post-list a {
     color: var(--text);
     text-decoration: none;
-
     transition: color 0.15s ease;
 }
 
@@ -179,7 +188,7 @@ article {
     color: var(--accent);
 }
 
-/* Links */
+/* LINKS */
 
 a {
     color: var(--accent);
@@ -188,17 +197,24 @@ a {
 }
 
 a:hover {
-    color: var(--accent);
     opacity: 0.85;
 }
 
-/* Back Link */
+/* BACK LINK */
 
 .back-link {
     margin-top: 4rem;
 }
 
-/* Time */
+.back-link a {
+    color: var(--muted);
+}
+
+.back-link a:hover {
+    color: var(--accent);
+}
+
+/* CLOCK */
 
 #time {
     margin-top: 40px;
@@ -206,9 +222,11 @@ a:hover {
 
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     margin-top: 5rem;
@@ -217,18 +235,17 @@ footer {
     border-top: 1px solid var(--border);
 
     color: var(--muted);
-
     font-size: 0.9rem;
 }
 
-/* Selection */
+/* SELECTION */
 
 ::selection {
     background: var(--accent);
     color: #111;
 }
 
-/* Scrollbar */
+/* SCROLLBAR */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -247,7 +264,7 @@ footer {
     background: #3a3a3a;
 }
 
-/* Mobile */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
