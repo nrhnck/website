@@ -27,3 +27,33 @@ img {
 .links a:hover {
     text-decoration: underline;
 }
+section {
+max-width: 800px;
+margin: 80px auto;
+text-align: left;
+}
+
+h2 {
+border-bottom: 1px solid #333;
+padding-bottom: 10px;
+}
+.blog-list {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.blog-card {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.blog-card:hover {
+    background: white;
+    color: black;
+}

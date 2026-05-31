@@ -3,72 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoughts</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="layout">
+<header>
+    <h1>Blog</h1>
+</header>
 
-    <aside class="sidebar">
-        <h1>Nora Hancock</h1>
+<section class="blog-list">
 
-        <p class="tagline">
-            dev · student · linux
-        </p>
+    <a href="posts/post1.html" class="blog-card">
+        <h2>My First Post</h2>
+        <p>learning how to build my website</p>
+    </a>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="blog.html" class="active">Thoughts</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../gear.html">Gear</a>
-            <a href="../contact.html">Contact</a>
-        </nav>
-    </aside>
+    <a href="posts/post2.html" class="blog-card">
+        <h2>Linux setup</h2>
+        <p>installing arch + hyprland on my laptop</p>
+    </a>
 
-    <main class="content">
+</section>
 
-        <article class="page">
-
-            <header class="page-header">
-                <h1>Thoughts</h1>
-
-                <p class="meta">
-                    Notes on technology, Linux, school, photography,
-                    and whatever else I find interesting.
-                </p>
-            </header>
-
-            <section class="page-content">
-
-                <ul class="post-list">
-
-                    <li>
-                        <span>2026-05-30</span>
-                        <a href="posts/future-of-blog.html">Future of this Blog?</a>
-                    </li>
-
-                    <li>
-                        <span>2026-05-29</span>
-                        <a href="posts/hyprland.html">Hyprland Setup</a>
-                    </li>
-
-                    <li>
-                        <span>2026-02-26</span>
-                        <a href="posts/first-blog.html">First Blog</a>
-                    </li>
-
-                </ul>
-
-            </section>
-
-        </article>
-
-    </main>
-
-</div>
+<nav class="links">
+    <a href="index.html">home</a> //
+    <a href="about.html">about</a>
+</nav>
 
 </body>
 </html>
-```
