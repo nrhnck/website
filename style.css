@@ -57,3 +57,32 @@ padding-bottom: 10px;
     background: white;
     color: black;
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    font-family: inherit;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: 1px solid white;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: black;
+    color: white;
+}
