@@ -4,132 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nora's blog</title>
-    <style>
-        /* --- Global & Layout Settings --- */
-        body {
-            background: #ffffff;
-            color: #111111;
-            font-family: "Times New Roman", Times, serif;
-            font-size: 18px;
-            line-height: 1.5;
-            max-width: 650px; 
-            margin: 40px auto; 
-            padding: 0 20px;
-        }
-
-        /* --- Typography & Links --- */
-        h1 {
-            font-size: 2.2rem;
-            margin: 0 0 10px 0;
-        }
-
-        h1 a {
-            color: #0000ee;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        p {
-            margin: 0 0 1em 0;
-        }
-
-        a {
-            color: #0000ee; 
-            text-decoration: underline;
-        }
-
-        a:visited {
-            color: #551a8b;
-        }
-
-        /* --- Navigation Links --- */
-        .links {
-            margin: 1rem 0 2rem 0;
-        }
-
-        .links a {
-            margin-right: 15px;
-            font-size: 1.1rem;
-        }
-
-        /* --- Images --- */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
-        }
-
-        .hero {
-            width: 100%; 
-            max-width: 100%;
-        }
-
-        /* --- Decorative Elements --- */
-        hr {
-            border: none;
-            border-top: 1px solid #cccccc; 
-            margin: 2.5rem 0;
-        }
-
-        .location-time {
-            font-size: 0.95rem;
-            color: #333;
-        }
-
-        /* --- Form / Newsletter Styling --- */
-        input[type="email"] {
-            font-family: inherit;
-            font-size: 0.95rem;
-            width: 250px;
-            padding: 6px;
-            border: 1px solid #777777;
-            background-color: #f9f9f9;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        button {
-            font-family: inherit;
-            font-size: 0.9rem;
-            padding: 4px 12px;
-            background-color: #efefef;
-            border: 1px solid #777777;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #e5e5e5;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1><a href="index.html" class="site-title">nora's blog</a></h1>
+        <h1><a href="/website" class="site-title">nora's blog</a></h1>
         <nav class="links">
-            <a href="index.html">Home</a>
-            <a href="blog/blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="feed.xml">RSS</a>
+            <a href="/website">Home</a>
+            <a href="/website/blog.html">Blog</a>
+            <a href="/website/about.html">About</a>
+            <a href="/website/contact.html">Contact</a>
+            <a href="/website/feed.xml">RSS</a>
         </nav>
     </header>
 
     <main>
-        <p class="meta-info">Latest project: <a href="posts/hyprland.html">My Hyprland Dotfiles</a></p>
+        <p class="meta-info">Latest project: <a href="/website/blog/posts/hyprland.html">My Hyprland Dotfiles</a></p>
         
         <img src="images/fern.jpg" alt="My desktop setup" class="hero">
 
-        <p class="location-time">New York, USA → <span id="ny-clock">Loading...</span></p>
+        <p class="location-time">New York, USA: <span id="ny-clock">Loading...</span></p>
         
         <p class="tagline">Welcome to my bloggg! I enjoy making yt videos, linux, reading and music.</p>
         
         <hr>
 
         <section class="newsletter">
-            <p>Subscribe to get a update whenever I drop a new post. No spam, no tracking. 👀</p>
-            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted!');">
+            <p>Subscribe to get a update whenever I drop a new post. WIP:</p>
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Working on this!');">
                 <input type="email" placeholder="Email address..." required>
                 <button type="submit">Subscribe</button>
             </form>
