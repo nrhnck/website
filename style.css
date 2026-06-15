@@ -5,8 +5,8 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     line-height: 1.5;
-    max-width: 650px; /* Narrower column for classic blog readability */
-    margin: 40px auto; /* Adds breathing room at the top and bottom */
+    max-width: 650px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
@@ -26,9 +26,9 @@ p {
     margin: 0 0 1em 0;
 }
 
-/* Authentic browser-default colors for that raw web vibe */
+/* Links */
 a {
-    color: #0000ee; 
+    color: #0000ee;
     text-decoration: underline;
 }
 
@@ -40,7 +40,7 @@ a:hover {
     color: #0000ee;
 }
 
-/* --- List & Code Elements (New) --- */
+/* --- Lists --- */
 ul {
     margin: 0 0 1em 0;
     padding-left: 20px;
@@ -50,7 +50,7 @@ li {
     margin-bottom: 5px;
 }
 
-/* Gives your Discord tag a clean, terminal-like monospace look */
+/* --- Code Styling --- */
 code {
     font-family: Courier, Monaco, Consolas, "Courier New", monospace;
     background-color: #f4f4f4;
@@ -77,24 +77,33 @@ img {
     margin: 20px 0;
 }
 
-/* Removed floats so images and text stack cleanly like the screenshot */
-.about-image img,
-.blog-image img,
 .hero {
-    width: 100%; 
+    width: 100%;
+    max-width: 100%;
+}
+
+/* If you use these wrappers, they stay covered too */
+.about-image img,
+.blog-image img {
+    width: 100%;
     max-width: 100%;
 }
 
 /* --- Decorative Elements --- */
 hr {
     border: none;
-    border-top: 1px solid #cccccc; /* Softer gray line instead of harsh black */
+    border-top: 1px solid #cccccc;
     margin: 2.5rem 0;
 }
 
 .tagline {
     font-style: italic;
     margin: 1.5rem 0;
+}
+
+.location-time {
+    font-size: 0.95rem;
+    color: #333;
 }
 
 /* --- Form / Newsletter Styling --- */
