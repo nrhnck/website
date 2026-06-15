@@ -2,7 +2,8 @@ function updateTime() {
     const now = new Date();
 
     document.getElementById("time").textContent =
-        "Local Time: " + now.toLocaleTimeString([], {
+        "My Time: " + now.toLocaleTimeString("en-US", {
+            timeZone: "America/New_York",
             hour: "2-digit",
             minute: "2-digit",
             second: "2-digit"
