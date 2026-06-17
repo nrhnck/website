@@ -106,27 +106,4 @@ hr {
     color: #333;
 }
 
-/* --- Form / Newsletter Styling --- */
-input[type="email"] {
-    font-family: inherit;
-    font-size: 0.95rem;
-    width: 250px;
-    padding: 6px;
-    border: 1px solid #777777;
-    background-color: #f9f9f9;
-    display: block;
-    margin-bottom: 8px;
-}
 
-button {
-    font-family: inherit;
-    font-size: 0.9rem;
-    padding: 4px 12px;
-    background-color: #efefef;
-    border: 1px solid #777777;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e5e5e5;
-}
