@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xteink X3 Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="layout">
+
+   
+
+    
+        <nav>
+            <a href="/website/index.html">home</a>
+            <a href="/website/about.html">about</a>
+            <a href="/website/blog/blog.html">blog</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+
+        <article class="page">
+
+            <header class="page-header">
+                <h1>Hyprland Setup</h1>
+                <p class="meta">2026-05-29</p>
+            </header>
+
+            <section class="page-content">
+
+                <p>
+                    The Xteink X3 is a unusual little device. When I bring it around in school, often my friends will ask "What is that?"
+                    My best explanation is, "its like a mini kindle". And it is essentially, it has an eink screen like the kindle, it reads books like a kindle does, but it doesn't come preinstalled with amazon bloat.
+                <p>
+                   Out of the box, kindles come preinstalled with tons of useless things, such as ads, and the kindle store (which yea, some people could use)
+                  I have a kindle, but I jailbreaked it w/koreader because I was tired of this bloat. 
+                </p>
+
+                <p>
+                  I wanted to read more, and my kindle was kinda hard to bring around everywhere with me, which is why I was looking into a pocket ereader.
+                  Initiilay, I was looking into the boox palma or hisense touch, these are chinise ereaders that are around the size of a phone and have andriod on them.
+                  While these devices are really cool, the price of 250-300 bucks was way out of my budget, plus, importing on ali express was extra pricey.
+                  I then came across a video by youtube James Scholz, showing off the Xteink X4, which was this niche little ereader without a touchscreen and used buttons.
+                  I looked a little more into the company, and saw that they had just released the X3, a smaller version of the ereader. I asked my parents for the device, and they gave it to me
+                  on my birthday. 
+                </p>
+
+                <p>
+                   Now, this device is so nice. I thought it wouldnt be super comfy to read on, considering its size, but it is actually extremely comfortable to read on, and I usually read for around 1-3 hours on it daily.
+                   I really like changing the orientation to landscape mode, its super comfy to read on it like that when I am in bed, or on the couch. On stock firmware, there were many times where my books would get formatted weirdly, 
+                   so I looked into it. Many reddit users suggested Crosspoint, which is a open source firmware for the device. I flashed it, and was instantly suprised on how much better the reading expeirience was.
+                   The only downside to crosspoint was the wallpapers, sometimes my wallpaper would glitch out, or just not show at all. 
+                </p>
+
+                <p>
+                  In conclusion, this device is fucking awesome, I would deffinetly recommend it!
+                </p>
+
+            </section>
+
+        </article>
+
+        <p class="back-link">
+            <a href="/website/blog/blog.html">← Back to Thoughts</a>
+        </p>
+
+    </main>
+
+</div>
+<link rel="stylesheet" href="style.css"
+</body>
+</html>
